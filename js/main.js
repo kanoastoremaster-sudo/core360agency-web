@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const id     = section.getAttribute('id');
       if (scrollY >= top && scrollY < top + height) {
         navLinks.forEach(link => {
-          link.classLiqt.remove('nav__link--active');
+          link.classList.remove('nav__link--active');
           if (link.getAttribute('href') === `#${id}`) {
             link.classList.add('nav__link--active');
           }
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', setActiveNav, { passive: true });
 
-  /* ===== CO9TACT FORM — EmailJS ===== */
+  /* ===== CONTACT FORM — EmailJS ===== */
   // ─────────────────────────────────────────────────────────────
   // CONFIGURACIÓN (3 pasos en emailjs.com):
   //  1. Crea cuenta en https://www.emailjs.com
