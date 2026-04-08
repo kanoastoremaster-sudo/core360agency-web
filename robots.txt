@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquear carpetas internas
+Disallow: /css/
+Disallow: /js/
+
+# Sitemap
+Sitemap: https://core360agency.com/sitemap.xml
