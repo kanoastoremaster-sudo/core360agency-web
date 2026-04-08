@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Marketing | Core 360 Agency</title>
+  <meta name="description" content="Artículos, estrategias y tendencias de marketing digital, BTL, branding y publicidad en Colombia. Blog de Core 360 Agency.">
+  <meta name="keywords" content="blog marketing Colombia, estrategias marketing digital, tendencias publicidad, branding Colombia">
+  <link rel="canonical" href="https://core360agency.com/blog">
+  <meta property="og:title" content="Blog de Marketing | Core 360 Agency">
+  <meta property="og:description" content="Estrategias, tendencias y conocimiento para hacer crecer tu marca en Colombia.">
+  <meta property="og:url" content="https://core360agency.com/blog">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/service-landing.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXXXXX&ev=PageView&noscript=1"/></noscript>
+
+  <style>
+    .blog-hero { padding: 120px 0 60px; text-align: center; background: var(--bg-secondary); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .blog-hero .section-tag { margin-bottom: 16px; display: inline-block; }
+    .blog-hero h1 { font-family: 'Sora', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 16px; }
+    .blog-hero h1 em { color: var(--primary); font-style: normal; }
+    .blog-hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 560px; margin: 0 auto; }
+    .blog-listing { padding: 80px 0; }
+    .blog-listing__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 32px; }
+    .blog-listing .blog-card { background: var(--card-bg); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+    .blog-listing .blog-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    .blog-card__img { height: 200px; position: relative; overflow: hidden; }
+    .blog-card__placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: rgba(255,255,255,0.5); }
+    .blog-card__cat { position: absolute; top: 16px; left: 16px; background: var(--primary); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .blog-card__body { padding: 24px; }
+    .blog-card__date { font-size: 0.8rem; color: var(--text-muted); display: block; margin-bottom: 10px; }
+    .blog-card__title { font-family: 'Sora', sans-serif; font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 12px; line-height: 1.4; }
+    .blog-card__excerpt { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px; }
+    .blog-card__link { color: var(--primary); font-size: 0.875rem; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+    .blog-card__link:hover { gap: 10px; }
+  </style>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">
+        <img src="../img/logo.png" alt="Core 360 Agency" class="nav__logo-img">
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="../index.html" class="nav__link">Inicio</a></li>
+        <li class="nav__item--dropdown">
+          <a href="../index.html#servicios" class="nav__link nav__link--dropdown">Servicios <i class="fas fa-chevron-down"></i></a>
+          <ul class="nav__dropdown">
+            <li><a href="../servicios/marketing-digital.html">Marketing Digital</a></li>
+            <li><a href="../servicios/btl-activaciones.html">BTL & Activaciones</a></li>
+            <li><a href="../servicios/atl.html">ATL</a></li>
+            <li><a href="../servicios/diseno-grafico.html">Diseño Gráfico</a></li>
+            <li><a href="../servicios/letreros-avisos.html">Letreros & Avisos</a></li>
+            <li><a href="../servicios/packaging-branding.html">Packaging & Branding</a></li>
+            <li><a href="../servicios/eventos-corporativos.html">Eventos Corporativos</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="../index.html#portafolio" class="nav__link">Portafolio</a></li>
+        <li><a href="index.html" class="nav__link nav__link--active">Blog</a></li>
+        <li><a href="../index.html#contacto" class="nav__link nav__cta">Cotizar</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="blog-hero">
+    <div class="container">
+      <span class="section-tag">Blog</span>
+      <h1>INSIGHTS DE<br><em>MARKETING</em></h1>
+      <p>Estrategias, tendencias y conocimiento para hacer crecer tu marca en Colombia.</p>
+    </div>
+  </section>
+
+  <!-- LISTADO DE ARTÍCULOS -->
+  <section class="blog-listing">
+    <div class="container">
+      <div class="blog-listing__grid">
+
+        <article class="blog-card reveal">
+          <div class="blog-card__img">
+            <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #FF4D00, #FF8C00);">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <span class="blog-card__cat">Marketing Digital</span>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">15 Marzo 2025</span>
+            <h2 class="blog-card__title">5 estrategias de marketing digital que sí funcionan en Colombia en 2025</h2>
+            <p class="blog-card__excerpt">El panorama digital colombiano tiene sus propias reglas. Descubre qué estrategias están generando ROI real para las marcas locales este año.</p>
+            <a href="estrategias-marketing-digital-colombia-2025.html" class="blog-card__link">Leer artículo <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card__img">
+            <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #00C5E8, #0080B8);">
+              <i class="fas fa-store"></i>
+            </div>
+            <span class="blog-card__cat">BTL</span>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">28 Febrero 2025</span>
+            <h2 class="blog-card__title">¿Por qué el BTL sigue siendo clave en la era del marketing digital?</h2>
+            <p class="blog-card__excerpt">El contacto humano y la experiencia presencial no tienen reemplazo. Así es como las mejores marcas combinan digital y BTL para máximo impacto.</p>
+            <a href="btl-vs-digital-como-combinarlos.html" class="blog-card__link">Leer artículo <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-card__img">
+            <div class="blog-card__placeholder" style="background: linear-gradient(135deg, #8B00FF, #C040FF);">
+              <i class="fas fa-box-open"></i>
+            </div>
+            <span class="blog-card__cat">Packaging</span>
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__date">10 Febrero 2025</span>
+            <h2 class="blog-card__title">Cómo un buen packaging puede aumentar tus ventas hasta un 70%</h2>
+            <p class="blog-card__excerpt">El empaque es el primer vendedor de tu producto. Estos son los principios de diseño que convierten compradores en el punto de venta.</p>
+            <a href="packaging-que-aumenta-ventas.html" class="blog-card__link">Leer artículo <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="nav__logo">
+            <img src="../img/logo.png" alt="Core 360 Agency" class="footer__logo-img">
+          </a>
+          <p>Agencia de marketing 360° en Colombia. Digital, BTL, ATL, diseño, letreros, packaging y eventos. Una sola agencia. Cobertura total.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/core360agency/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/core360agency" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/core360agency" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@core360agency" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="../servicios/marketing-digital.html">Marketing Digital</a></li>
+            <li><a href="../servicios/btl-activaciones.html">BTL & Activaciones</a></li>
+            <li><a href="../servicios/atl.html">ATL</a></li>
+            <li><a href="../servicios/diseno-grafico.html">Diseño Gráfico</a></li>
+            <li><a href="../servicios/letreros-avisos.html">Letreros & Avisos</a></li>
+            <li><a href="../servicios/packaging-branding.html">Packaging & Branding</a></li>
+            <li><a href="../servicios/eventos-corporativos.html">Eventos Corporativos</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="../index.html#nosotros">Quiénes somos</a></li>
+            <li><a href="../index.html#portafolio">Portafolio</a></li>
+            <li><a href="../index.html#clientes">Clientes</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="../index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> comercial@core360agency.com</li>
+            <li><i class="fab fa-whatsapp"></i> +57 300 000 0000</li>
+            <li><i class="fas fa-map-marker-alt"></i> Bogotá - Colombia</li>
+          </ul>
+          <div class="footer__badge"><span>Meta Business Partner</span></div>
+          <div class="footer__badge"><span>Google Partner</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Core 360 Agency. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="../privacidad.html">Política de privacidad</a>
+          <a href="../terminos.html">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20información%20sobre%20los%20servicios%20de%20Core%20360%20Agency" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button class="scroll-top" id="scrollTop" aria-label="Arriba"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
