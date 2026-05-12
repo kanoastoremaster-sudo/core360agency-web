@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada — Core 360 Agency</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://core360agency.com/">
+  <link rel="icon" href="/img/Logo.png" type="image/png">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #FF4D00;
+      --secondary: #00C5E8;
+      --bg: #080C10;
+      --card: #0F1520;
+      --text: #E8EDF5;
+      --muted: #8895A7;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Fondo animado */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 20%, rgba(255,77,0,.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(0,197,232,.10) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .error-code {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(7rem, 20vw, 14rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.25rem;
+    }
+
+    .error-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .error-msg {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.75rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity .2s, transform .2s;
+    }
+    .btn:hover { opacity: .85; transform: translateY(-2px); }
+
+    .btn--primary {
+      background: linear-gradient(135deg, var(--primary), #ff6a1a);
+      color: #fff;
+    }
+
+    .btn--outline {
+      border: 1.5px solid rgba(255,255,255,.2);
+      color: var(--text);
+      background: transparent;
+    }
+    .btn--outline:hover { border-color: var(--secondary); color: var(--secondary); }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 2px;
+      margin: 1.5rem auto;
+    }
+
+    .quick-links {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+
+    .quick-links p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .quick-links nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .quick-links a {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.35rem 0.85rem;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 100px;
+      transition: color .2s, border-color .2s;
+    }
+    .quick-links a:hover { color: var(--secondary); border-color: var(--secondary); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="error-code">404</div>
+    <h1 class="error-title">Página no encontrada</h1>
+    <div class="divider"></div>
+    <p class="error-msg">
+      La página que buscas no existe o fue movida.<br>
+      Vuelve al inicio o explora nuestros servicios.
+    </p>
+
+    <div class="actions">
+      <a href="/" class="btn btn--primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Ir al inicio
+      </a>
+      <a href="/#contacto" class="btn btn--outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Contáctanos
+      </a>
+    </div>
+
+    <div class="quick-links">
+      <p>Explora nuestros servicios</p>
+      <nav>
+        <a href="/servicios/marketing-digital">Marketing Digital</a>
+        <a href="/servicios/btl-activaciones">BTL & Activaciones</a>
+        <a href="/servicios/atl">Publicidad ATL</a>
+        <a href="/servicios/diseno-grafico">Diseño Gráfico</a>
+        <a href="/servicios/letreros-avisos">Letreros & Avisos</a>
+        <a href="/servicios/packaging-branding">Packaging</a>
+        <a href="/servicios/eventos-corporativos">Eventos</a>
+        <a href="/blog">Blog</a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

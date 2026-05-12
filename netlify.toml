@@ -1,49 +1,33 @@
-[[redirects]]
-  from = "/*"
-  to = "/:splat.html"
-  status = 200
-  conditions = {Language = ["en"], Country = ["US"]}
-
-[[redirects]]
-  from = "/servicios"
-  to = "/servicios/marketing-digital"
-  status = 301
-
-[[redirects]]
-  from = "/blog"
-  to = "/blog/index.html"
-  status = 200
-
-# Redirigir HTTP a HTTPS y www a non-www
-[[redirects]]
-  from = "http://www.core360agency.com/*"
-  to = "https://core360agency.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://core360agency.com/*"
-  to = "https://core360agency.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.core360agency.com/*"
-  to = "https://core360agency.com/:splat"
-  status = 301
-  force = true
-
-# URLs limpias - remover .html de la URL
+# URLs limpias: redirige /pagina.html → /pagina (301)
 [[redirects]]
   from = "/*.html"
   to = "/:splat"
   status = 301
   force = true
 
-# Páginas de error personalizadas
+# URLs limpias: sirve el archivo .html para rutas sin extensión (200 rewrite interno)
+[[redirects]]
+  from = "/*"
+  to = "/:splat.html"
+  status = 200
+
+# /servicios/ sin página propia → va a marketing-digital
+[[redirects]]
+  from = "/servicios"
+  to = "/servicios/marketing-digital"
+  status = 301
+
+# www → non-www
+[[redirects]]
+  from = "https://www.core360agency.com/*"
+  to = "https://core360agency.com/:splat"
+  status = 301
+  force = true
+
 [build]
   publish = "."
 
+# Headers de seguridad para todas las páginas
 [[headers]]
   for = "/*"
   [headers.values]
@@ -53,6 +37,7 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Cache-Control = "public, max-age=3600"
 
+# Cache largo para assets estáticos
 [[headers]]
   for = "/css/*"
   [headers.values]
