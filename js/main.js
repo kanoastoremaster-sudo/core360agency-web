@@ -60,19 +60,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const trigger = item.querySelector('.nav__link--dropdown');
     if (!trigger) return;
 
-    // Mobile: click toggles dropdown (prevents navigation)
-    trigger.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        const isOpen = item.classList.contains('open');
-        // Close all other dropdowns
-        dropdownItems.forEach(d => d.classList.remove('open'));
-        item.classList.toggle('open', !isOpen);
+    let closeTimer;
+
+    // Desktop: mouseenter abre, mouseleave cierra con pequeño delay
+    item.addEventListener('mouseenter', () => {
+      if (window.innerWidth > 768) {
+        clearTimeout(closeTimer);
+        dropdownItems.forEach(d => { if (d !== item) d.classList.remove('open'); });
+        item.classList.add('open');
       }
+    });
+
+    item.addEventListener('mouseleave', () => {
+      if (window.innerWidth > 768) {
+        closeTimer = setTimeout(() => item.classList.remove('open'), 120);
+      }
+    });
+
+    // Clic: en desktop previene navegar a #servicios y togglea; en móvil igual
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isOpen = item.classList.contains('open');
+      dropdownItems.forEach(d => d.classList.remove('open'));
+      item.classList.toggle('open', !isOpen);
     });
   });
 
-  // Close dropdowns when clicking outside (desktop)
+  // Cierra al hacer clic fuera
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.nav__item--dropdown')) {
       dropdownItems.forEach(d => d.classList.remove('open'));

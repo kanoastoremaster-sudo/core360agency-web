@@ -1186,13 +1186,7 @@ em {
   pointer-events: none;
 }
 
-/* Desktop: hover abre el menú */
-@media (min-width: 769px) {
-  .nav__item--dropdown:hover .nav__dropdown-icon { transform: rotate(180deg); }
-  .nav__item--dropdown:hover .nav__dropdown {
-    opacity: 1; visibility: visible; transform: translateY(0); pointer-events: all;
-  }
-}
+/* Dropdown controlado por JS (.open) en todos los dispositivos */
 
 /* JS abre el menú (click / mobile) */
 .nav__item--dropdown.open .nav__dropdown {
